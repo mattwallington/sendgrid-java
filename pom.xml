@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.sonatype.oss</groupId>
@@ -10,8 +11,9 @@
     <artifactId>sendgrid-java</artifactId>
     <name>SendGrid Java helper library</name>
     <version>2.1.1</version>
-    <description>This Java module allows you to quickly and easily send emails through SendGrid using Java.</description>
-    <url>https://github.com/sendgrid/sendgrid-java</url>
+    <description>This Java module allows you to quickly and easily send emails through SendGrid using Java.
+    </description>
+    <url>https://github.com/mattwallington/sendgrid-java</url>
     <licenses>
         <license>
             <name>Apache License 2.0</name>
@@ -20,11 +22,12 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/sendgrid/sendgrid-java</url>
-        <connection>scm:git:git@github.com:sendgrid/sendgrid-java.git</connection>
-        <developerConnection>scm:git:git@github.com:sendgrid/sendgrid-java.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <url>https://github.com/mattwallington/sendgrid-java</url>
+        <connection>git@github.com:mattwallington/sendgrid-java.git</connection>
+        <developerConnection>git@github.com:mattwallington/sendgrid-java.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
@@ -110,7 +113,13 @@
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20140107</version>
+            <version>20141113</version>
+        </dependency>
+        <dependency>
+            <groupId>org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
+            <version>1.2.3</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
